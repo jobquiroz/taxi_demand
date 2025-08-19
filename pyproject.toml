@@ -3,7 +3,7 @@ name = "src"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "Your Name",email = "you@example.com"}
+    {name = "Job Quiroz",email = "jobquiroz@hotmail.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.13"
@@ -16,8 +16,11 @@ dependencies = [
 ]
 
 [tool.poetry]
-packages = [{include = "src", from = "src"}]
+packages = [{include = "src"}]
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.30.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
